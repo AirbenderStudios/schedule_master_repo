@@ -29,10 +29,9 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/projects", projectsRouter);
 
-//var mongoDB = "mongodb://127.0.0.1/database";
 var mongoDB =
-  "mongodb+srv://ammon:Password1%21@cluster0-lhvh5.mongodb.net/test?retryWrites=true&w=majority";
-// "mongodb+srv://leifonatree:Password@mycluster-erllz.mongodb.net/test?retryWrites=true&w=majority";
+  "mongodb+srv://dbuser:dbuser@mycluster-erllz.mongodb.net/test?retryWrites=true&w=majority";
+  // "mongodb+srv://ammon:Password1%21@cluster0-lhvh5.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;

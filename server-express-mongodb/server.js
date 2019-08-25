@@ -3,15 +3,25 @@
 
 const express = require('express');
 const app = express();
+var cors = require("cors");
+app.use(cors());
 
-app.get('/api/customers', (req, res) => {
-    const customers = [
-        {id: 1, firstName: 'Johnny', lastName: 'Doe'},
-        {id: 2, firstName: 'Jane', lastName: 'Smith'},
-        {id: 3, firstName: 'Jim', lastName: 'Broseph'}
+var allowCrossDomain = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+}
+
+
+app.get('/api/projects', (req, res) => {
+    const projects = [
+        {id: 1, projectName: 'Build a MERN stack app', description: 'Project Mgmt'},
+        {id: 2, projectName: 'Take a vacation', description: 'Tropical'},
+        {id: 3, projectName: 'Build Resume', description: 'Career Services,LinkedIn, GitHub etc.'}
     ];
     
-    res.json(customers);
+    res.json(projects);
 
 });
 

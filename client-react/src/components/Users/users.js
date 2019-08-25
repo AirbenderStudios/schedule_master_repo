@@ -18,7 +18,7 @@ fetch('/api/users')
     render() {
         return (
             <div>
-                <h2>Users component</h2>
+                <h2>List of Users</h2>
                 <ul>
                     {this.state.users.map(users => <li key={users.id}> {users.id} {users.firstName} {users.lastName} </li>)}
                 </ul>

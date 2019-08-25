@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Route, Link, BrowserRouter as Router } from 'react-dom';
 // import CreateProject from './components/createProject/createProject';
 // import DeleteProject from './components/deleteproject/deleteProject';
 // import UpdateProject from './components/updateProject/updateProject';

@@ -3,3 +3,10 @@
     align-items: center;
     text-align: center;
 }
+
+.form-control {
+    max-width: 30%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    
+}

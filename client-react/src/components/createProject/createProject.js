@@ -93,21 +93,21 @@ export class CreateProject extends Component {
         return (
             <div><form className="ok" onSubmit={this.onSubmit}>
               <br></br>
-              <label><strong>Username:</strong> </label>
+              {/* <label><strong>User:</strong> </label>
           <select ref="userInput"
               // required
               className="form-control"
               value={this.state.username}
               onChange={this.onChangeUsername}>
-              {/* {
+              {
                 this.state.users.map(function(user) {
                   return <option 
                     key={user}
                     value={user}>{user}
                     </option>;
                 })
-              } */}
-          </select>
+              }
+          </select> */}
             <label>
               Name of Project:  <br></br>
               <input type="text" value={this.state.project_title} onChange={this.onChangeProjectName} /> 

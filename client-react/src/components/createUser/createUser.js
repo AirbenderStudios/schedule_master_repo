@@ -60,7 +60,7 @@ alert(`${this.state.username} created!`);
                 onChange={this.onChangeUsername}
                 />
                 <label>Password: </label>
-            <input  type="text"
+            <input  type="password"
                 required
                 className="form-control"
                 value={this.state.password}
